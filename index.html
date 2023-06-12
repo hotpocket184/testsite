@@ -9,5 +9,32 @@
 <body>
     <button id="b1">Click Me</button>
     <button id="b2">Ready</button>
+<script>
+    var b1 = document.getElementById("b1");
+
+    b1.addEventListener("mouseover", function(){
+        var x = Math.floor(Math.random() * 1000);
+        var y = Math.floor(Math.random() * 1000);
+        b1.style.left = x + "px";
+        b1.style.top = y + "px";
+    });
+
+    b1.addEventListener("click", function(){
+        alert("stop hacking bro");
+    });
+
+    var b2 = document.getElementById("b2");
+
+    b2.addEventListener("click", function(){
+        alert("are you ready?");
+    });
+
+    b2.addEventListener("mouseover", function(){
+        var x = Math.floor(Math.random() * 1000);
+        var y = Math.floor(Math.random() * 1000);
+        b2.style.left = x + "px";
+        b2.style.top = y + "px";
+    });
+</script>
 </body>
 </html>
