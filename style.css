@@ -1,0 +1,66 @@
+button {
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    margin: 20px;
+}
+
+#b1 {
+    background-color: dodgerblue;
+    border-radius: 6px;
+    font-size: 16pt;
+    color: whitesmoke;
+    padding: 5px 10px 5px 10px;
+    outline: 3px solid transparent;
+    transition: all 0.2s ease;
+    border: 3px solid dodgerblue;
+}
+
+#b1:hover {
+    transform: scale(105%);
+}
+
+#b1:active {
+    transform: scale(97%);
+    outline-color: dodgerblue;
+    outline-offset: 3px;
+    filter: brightness(95%);
+    border-color: rgb(109, 182, 255);
+}
+
+#b2 {
+    padding: 5px 10px 5px 10px;
+    background: -webkit-linear-gradient(45deg, orange, red);
+    font-weight: bold;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40pt;
+    border-radius: 7px;
+    transform: translateZ(1px);
+    transition: all 0.2s ease;
+    filter: brightness(160%);
+}
+
+#b2::after {
+    content: "Ready";
+    background: -webkit-linear-gradient(45deg, black, black);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    transform: translateZ(-1px);
+    left: -100px;
+    position: absolute;
+}
+
+#b2:hover {
+    transform: scale(110%);
+    filter: brightness(160%);
+}
+
+#b2:focus {
+    transform: scale(75%) rotate(25deg);
+    transition: all 0.1s ease;
+    filter: brightness(160%);
+}
